@@ -13,3 +13,9 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+
+// datatables
+mix.copy(
+    'node_modules/datatables.net/js/',
+    'public/assets/plugins/datatables/js/'
+);
